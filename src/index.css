@@ -5,3 +5,18 @@
   --color-green: #1b5b31;
   --color-grey: #f5f0ec;
 }
+
+.button-next,
+.button-prev {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #f5f0ec;
+  padding: 2em;
+}
+.button-next {
+  transform: rotate(270deg);
+}
+
+.button-prev {
+  transform: rotate(90deg);
+}

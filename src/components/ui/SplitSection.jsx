@@ -8,7 +8,6 @@ const SplitSection = ({ children, image, bgColor, opacity, reverse }) => {
         style={{ backgroundImage: `url(${image})` }}
       ></div>
 
-      {/* <div className="absolute inset-0 bg-beige/50 h-[85svh] lg:hidden"></div> */}
       <div className={`absolute inset-0 ${bgColor}/${opacity} h-[85svh] lg:hidden`}></div>
 
       <div
@@ -16,7 +15,7 @@ const SplitSection = ({ children, image, bgColor, opacity, reverse }) => {
       >
         <div className="max-w-150 ">{children}</div>
       </div>
-      <img src={image} alt={image} className="hidden sm:block lg:flex-1" />
+      <img src={image} alt={image} className="hidden lg:block lg:flex-1" />
     </div>
   );
 };

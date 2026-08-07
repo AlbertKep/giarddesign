@@ -3,7 +3,7 @@ const Heading = ({ children, className, label, labelClassName }) => {
   const lastWord = words.pop();
   const rest = words.join(" ");
   return (
-    <h2 className={`relative text-5xl mb-8 ${className}`}>
+    <h2 className={`relative text-3xl mb-8 md:text-5xl ${className}`}>
       {rest} <span className="italic">{lastWord}</span>
       <span className={`text-green text-xs absolute -top-5 left-0 ${labelClassName}`}>{label}</span>
     </h2>

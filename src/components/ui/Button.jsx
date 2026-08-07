@@ -1,6 +1,8 @@
-const Button = ({ children, className }) => {
+const Button = ({ children, className, onClick }) => {
   return (
-    <button className={`cursor-pointer px-6 py-3 rounded-[100px] ${className}`}>{children}</button>
+    <button onClick={onClick} className={`cursor-pointer px-6 py-3 rounded-[100px] ${className}`}>
+      {children}
+    </button>
   );
 };
 

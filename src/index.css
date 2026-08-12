@@ -20,3 +20,19 @@
 .button-prev {
   transform: rotate(90deg);
 }
+
+.masonry-grid {
+  display: flex;
+  gap: 2em;
+}
+
+.masonry-grid_column {
+  background-clip: padding-box;
+}
+
+.masonry-grid_column > img {
+  max-height: 300px;
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: 25px;
+}

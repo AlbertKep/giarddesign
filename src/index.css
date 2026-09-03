@@ -6,6 +6,11 @@
   --color-grey: #f5f0ec;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .button-next,
 .button-prev {
   cursor: pointer;

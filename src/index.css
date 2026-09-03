@@ -35,7 +35,7 @@ body {
   background-clip: padding-box;
 }
 
-.masonry-grid_column > img {
+.masonry-grid_column img {
   max-height: 300px;
   object-fit: cover;
   width: 100%;

@@ -3,7 +3,7 @@ export const silder = [
     id: 1,
     heading: "Nowoczesna aranżacja Twojego ogrodu",
     description:
-      "Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usługz indywidualnym podejściem do każdego projektu.",
+      "Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.",
     image: "image1",
   },
   {

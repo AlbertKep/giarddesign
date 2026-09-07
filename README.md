@@ -5,7 +5,7 @@ The project focuses on clean UI, smooth animations, modular React architecture, 
 
 ### 🚀 Live Demo
 
-[(GiardDesign)](https://giarddesign.netlify.app/)
+[(GiardDesign)](https://giarddesign-page.netlify.app/)
 
 ### 🛠️ Tech Stack
 

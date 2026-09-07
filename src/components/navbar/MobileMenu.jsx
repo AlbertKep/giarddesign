@@ -1,26 +1,9 @@
-import { motion, stagger } from "motion/react";
+import { motion } from "framer-motion";
 // ui
 import SearchBar from "../ui/SearchBar";
-// data
+// animations
+import { fadeMenuItems, slideMenu } from "../../motionVariants";
 
-// const menuData = [
-//   { id: 1, name: "Oferta" },
-//   { id: 2, name: "O firmie" },
-//   { id: 3, name: "Realizacje" },
-//   { id: 4, name: "Kontakt" },
-// ];
-const menu = {
-  hidden: { x: "100%", transition: { when: "afterChildren", delayChildren: stagger(0.15) } },
-  visible: {
-    x: 0,
-    transition: { when: "beforeChildren", staggerChildren: 0.15 },
-  },
-};
-
-const items = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 },
-};
 const MobileMobile = ({
   menuData,
   arrow,
@@ -33,7 +16,7 @@ const MobileMobile = ({
   return (
     <motion.div
       className="flex items-center justify-center flex-col fixed top-0 bottom-0 left-0 h-dvh w-full z-4 bg-white md:hidden"
-      variants={menu}
+      variants={slideMenu}
       initial="hidden"
       animate={isOpen ? "visible" : "hidden"}
     >
@@ -42,7 +25,7 @@ const MobileMobile = ({
           <motion.li
             key={id}
             className="cursor-pointer relative text-2xl text-center border-b-2 border-b-transparent transition-all duration-300 ease-in-out hover:border-b-black"
-            variants={items}
+            variants={fadeMenuItems}
             onClick={() => {
               handleShowMenu(isDropdown, href);
             }}
@@ -75,7 +58,7 @@ const MobileMobile = ({
         ))}
       </ul>
 
-      <motion.div className="flex justify-center mt-5 sm:flex-row-reverse" variants={items}>
+      <motion.div className="flex justify-center mt-5 sm:flex-row-reverse" variants={fadeMenuItems}>
         <SearchBar isSearchOpen={isSearchOpen} />
       </motion.div>
     </motion.div>

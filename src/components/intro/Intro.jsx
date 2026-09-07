@@ -17,7 +17,7 @@ import SplitSection from "../ui/SplitSection";
 const images = { image1, image2 };
 const Intro = () => {
   return (
-    <section className="bg-beige relative">
+    <section id="offer" className="bg-beige relative mt-20">
       <Swiper
         modules={[Navigation]}
         slidesPerView={1}

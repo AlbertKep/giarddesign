@@ -4,7 +4,7 @@ import Button from "../ui/Button";
 
 const InstagramBanner = () => {
   return (
-    <section className="flex justify-center">
+    <section id="contact" className="flex justify-center font-light">
       <div className="flex flex-col gap-2 max-w-5xl text-white bg-green py-10 px-12 md:flex-row md:gap-6 md:py-27 md:my-14 md:px-22">
         <Heading className="font-montserrat text-xl md:basis-5/6 md:text-3xl/1.2">
           {heading}

@@ -73,7 +73,7 @@ const Projects = () => {
   };
 
   return (
-    <motion.section className="relative bg-beige pt-10 lg:pt-30 px-10 mx-auto">
+    <section id="projects" className="relative bg-beige pt-10 lg:pt-30 px-10 mx-auto">
       <Heading label={label}>{heading}</Heading>
 
       <motion.div

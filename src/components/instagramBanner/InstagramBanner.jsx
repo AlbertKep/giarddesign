@@ -1,6 +1,8 @@
+// ui
 import Heading from "../../components/ui/Heading";
-import { description, heading } from "../../data/instagramBanner";
 import Button from "../ui/Button";
+// data
+import { description, heading } from "../../data/instagramBanner";
 
 const InstagramBanner = () => {
   return (

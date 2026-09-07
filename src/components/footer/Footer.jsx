@@ -1,6 +1,9 @@
+// icons
 import companyLogo from "../../assets/icons/company-logo.svg";
 import logo from "../../assets/icons/logo-white.svg";
+// data
 import { contactPrompt, email, footerCTA, menuList, phoneNumber } from "../../data/footer";
+// ui
 import Button from "../ui/Button";
 
 const Footer = () => {

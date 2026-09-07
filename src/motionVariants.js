@@ -1,3 +1,18 @@
+import { stagger } from "motion/react";
+
+export const slideMenu = {
+  hidden: { x: "100%", transition: { when: "afterChildren", delayChildren: stagger(0.15) } },
+  visible: {
+    x: 0,
+    transition: { when: "beforeChildren", staggerChildren: 0.15 },
+  },
+};
+
+export const fadeMenuItems = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
+
 export const sectionStagger = (time) => ({
   visible: { transition: { staggerChildren: time } },
 });

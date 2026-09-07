@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -8,11 +9,14 @@ import { Navigation } from "swiper/modules";
 
 import image1 from "../../assets/images/image1.png";
 import image2 from "../../assets/images/image2.png";
+// data
 import { silder } from "../../data/intro";
-
+// ui
+import { slideUp } from "../../motionVariants";
 import Arrow from "../ui/Arrow";
 import Button from "../ui/Button";
 import SplitSection from "../ui/SplitSection";
+// animations
 
 const images = { image1, image2 };
 const Intro = () => {
@@ -31,23 +35,34 @@ const Intro = () => {
       >
         {silder?.map(({ id, image, heading, description }) => (
           <SwiperSlide key={id}>
-            <SplitSection image={images[image]} bgColor="bg-beige" opacity="50">
-              <h1 className="font-montserrat font-medium text-4xl/12.5 lg:text-6xl/16.5">
-{heading}
-</h1>
+            <SplitSection image={images[image]} overlay="bg-beige/60">
+              <motion.div
+                key={id}
+                variants={slideUp()}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{
+                  once: true,
+                  amount: 0.5,
+                }}
+              >
+                <h1 className="font-montserrat font-medium text-4xl/12.5 lg:text-6xl/16.5">
+                  {heading}
+                </h1>
 
-              <p className="mt-14 font text-base">{description}</p>
+                <p className="mt-14 font text-base">{description}</p>
 
-              <div className="flex flex-col gap-6 mt-10 sm:flex-row">
-                <Button className="bg-green text-grey border border-green hover:bg-beige hover:text-green">
-                  Skontaktuj się z nami
-                </Button>
+                <div className="flex flex-col gap-6 mt-10 sm:flex-row">
+                  <Button className="bg-green text-grey border border-green hover:bg-beige hover:text-green">
+                    Skontaktuj się z nami
+                  </Button>
 
-                <Button className="flex bg-beige text-green border boder-beige sm:border-green hover:bg-green hover:text-beige">
-                  <span className="mr-2 flex-1">Zobacz nasze realizacje</span>
-                  <Arrow className="w-4 fill-green hover:fill-grey" />
-                </Button>
-              </div>
+                  <Button className="flex bg-beige text-green border boder-beige sm:border-green hover:bg-green hover:text-beige">
+                    <span className="mr-2 flex-1">Zobacz nasze realizacje</span>
+                    <Arrow className="w-4 fill-green hover:fill-grey" />
+                  </Button>
+                </div>
+              </motion.div>
             </SplitSection>
           </SwiperSlide>
         ))}

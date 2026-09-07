@@ -21,7 +21,7 @@ const Navbar = () => {
     if (href !== "#offer") setIsOpen(false);
   };
   return (
-    <nav className="fixed top-0 flex justify-between items-center bg-white w-full p-5 z-5">
+    <nav className="fixed top-0 flex justify-between items-center bg-white w-full p-5 z-5 shadow-[0_2px_4px_rgba(0,0,0,0.08)]">
       <a href="#" className="w-30 z-5">
         <img src={logo} alt="logo" className="w-max" />
       </a>

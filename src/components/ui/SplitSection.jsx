@@ -12,7 +12,7 @@ const SplitSection = ({ id, children, image, bgColor, overlay, reverse }) => {
       <div className={`absolute inset-0 ${overlay} h-[85svh] lg:hidden`}></div>
 
       <div
-        className={`relative z-10 text-left p-10 text-lack drop-shadow-lg md:flex-1 lg:flex lg:justify-center lg:${bgColor} items-center`}
+        className={`relative z-10 flex text-left p-10 text-lack drop-shadow-lg md:flex-1 lg:flex lg:justify-center lg:${bgColor} items-center`}
       >
         <div className="max-w-150 ">{children}</div>
       </div>

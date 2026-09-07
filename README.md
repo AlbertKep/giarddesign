@@ -1,16 +1,28 @@
-# React + Vite
+# GiardDesign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GiardDesign is a fully responsive garden‑design website built as a recruitment task.
+The project focuses on clean UI, smooth animations, modular React architecture, and pixel‑perfect implementation of the provided design.
 
-Currently, two official plugins are available:
+### 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[(GiardDesign)](https://giarddesign.netlify.app/)
 
-## React Compiler
+### 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- TailwindCSS
+- Motion
+- PhotoSwipe
+- React Masonry
 
-## Expanding the ESLint configuration
+### 🎯 Learning Goals
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- mastering Tailwind utility‑first workflow
+- building scalable component architecture
+- improving animation workflow with Motion
+- working with real‑world gallery patterns (Masonry + Lightbox)
+
+### 📄 Credits
+
+The design used in this project belongs to AdRespect.
+This repository contains only my front‑end implementation created as part of a recruitment task.

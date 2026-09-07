@@ -54,11 +54,13 @@ const Intro = () => {
 
                 <div className="flex flex-col gap-6 mt-10 sm:flex-row">
                   <Button className="bg-green text-grey border border-green hover:bg-beige hover:text-green">
-                    Skontaktuj się z nami
+                    <a href="#contact">Skontaktuj się z nami</a>
                   </Button>
 
                   <Button className="flex bg-beige text-green border boder-beige sm:border-green hover:bg-green hover:text-beige">
-                    <span className="mr-2 flex-1">Zobacz nasze realizacje</span>
+                    <a href="#projects" className="mr-2 flex-1">
+                      Zobacz nasze realizacje
+                    </a>
                     <Arrow className="w-4 fill-green hover:fill-grey" />
                   </Button>
                 </div>

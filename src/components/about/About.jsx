@@ -30,7 +30,9 @@ const About = () => {
         <p className="mt-14 font text-base text-white">{description}</p>
         <div className="flex flex-col gap-6 mt-10 sm:flex-row ">
           <Button className="flex bg-transparent text-white border border-white lg:bg-green hover:bg-green hover:text-beige">
-            <span className="mr-2 flex-1">Poznaj nas bliżej</span>
+            <a href="#contact" className="mr-2 flex-1">
+              Poznaj nas bliżej
+            </a>
             <Arrow className="w-4 fill-green hover:fill-grey -rotate-90" />
           </Button>
         </div>

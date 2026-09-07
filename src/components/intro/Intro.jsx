@@ -32,7 +32,9 @@ const Intro = () => {
         {silder?.map(({ id, image, heading, description }) => (
           <SwiperSlide key={id}>
             <SplitSection image={images[image]} bgColor="bg-beige" opacity="50">
-              <h1 className="text-4xl/12.5 lg:text-6xl/17.5 font-medium">{heading}</h1>
+              <h1 className="font-montserrat font-medium text-4xl/12.5 lg:text-6xl/16.5">
+{heading}
+</h1>
 
               <p className="mt-14 font text-base">{description}</p>
 
